@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.backColor{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.navBar{
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    z-index: 100;
+    background-color: transparent;
+    
+}
+
+ul{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a{
+    margin: 0px 17px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.frameContainer {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */  
+    padding-top: 25px;
+    width: 300%; /* enlarge beyond browser width */
+    left: -100%; /* center */
+}
+
+.frameContainer iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    pointer-events: none !important;
+}
+
+.wrapper {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+
+.hero{
+    width: 100%;
+    height: 93.2vh;
+    font-size: 15vh;
+    position: absolute;
+    z-index: 10;
+    background-color:transparent;
+    text-align: center;
+    color: #fff;
+    cursor: default; 
+}
+
+.tareas{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin-top: 25vh;
+    font-size: 3vh;
+}
+
+h1{
+    font-style: italic;
+}
