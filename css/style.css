@@ -1,0 +1,252 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.frameContainer {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */  
+    padding-top: 25px;
+    width: 300%; /* enlarge beyond browser width */
+    left: -100%; /* center */
+}
+
+.frameContainer iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    pointer-events: none !important;
+}
+
+.wrapper {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.navBar{
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    z-index: 100;
+    background-color: transparent;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a{
+    margin-right: 17px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero{
+    width: 100%;
+    height: 93.2vh;
+    font-size: 15vh;
+    position: absolute;
+    z-index: 10;
+    background-color:transparent;
+    text-align: center;
+    color: #fff;
+}
+
+.tareas{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin-top: 25vh;
+    font-size: 3vh;
+}
+
+h1{
+    font-style: italic;
+}
+
+
+.heroAbout{
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    text-align: left;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 20vh;
+}
+
+.yoSoy{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 12vh;
+    text-align: left;
+    font-weight: 200;
+    margin-top: 8vh;
+    margin-left: 20vh;
+    margin-bottom: 10vh;
+}
+
+.pChido{
+    font-weight: 100;
+    margin: 2px;
+    font-size: 4vh;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 46vh;
+}
+
+.marca{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin: 2px;
+    font-size: 4vh;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 46vh;
+}
+
+
+.heroContact{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    text-align: left;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+.rowAbout{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.seccionAbout{
+    margin: 40vh 20vh 5vh 20vh;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+h4{
+    margin: 0px;
+}
+
+.margenLeft{
+    width: 55vh;
+    border-left: 2px;
+    border-color: #fff;
+    border-style: dashed;
+}
+
+.mainCurriculum{
+    border-left: 2px;
+    border-color: #fff;
+    border-style: dashed;
+    width: 150vh;
+    border-left: none;
+}
+
+.tituloLeft{
+    text-align: left;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5vh;
+}
+
+.listaLeft{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    text-align: left;
+    margin-left: 5vh;
+}
+
+.elementosLeft{
+    margin-bottom: 2vh;
+}
+
+.tituloMain{
+    text-align: left;
+    font-size: 6vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5vh;
+}
+
+.otroTituloMain{
+    text-align: left;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5vh;
+    margin-bottom: 2vh;
+}
+
+.subtituloMain{
+    text-align: left;
+    font-size: 2.5vh;
+    margin-left: 5vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lugarMain{
+    text-align: left;
+    font-size: 2vh;
+    margin: 0px;
+    margin-left: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descripcionMain{
+    text-align: left;
+    font-size: 2vh;
+    margin-left: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20vh;
+}
+
+
+.slogan{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin-top: 15vh;
+    font-size: 3vh;
+}
+
