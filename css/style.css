@@ -21,7 +21,7 @@ body{
 .pro,
 .perso {
     max-width: 100vw;
-    height: 640vh;
+    height: 530vh;
     margin-top: 0vh;
 }
 .perso {
@@ -47,7 +47,7 @@ body{
     background-color: transparent;
     color: rgb(0, 0, 0);
     border: none;
-    padding-top: 200vh;
+    padding-top: 120vh;
     font-size: 3vh;
     margin: 0;
 }
@@ -67,7 +67,7 @@ body{
     background-color: transparent;
     color: rgb(0, 0, 0);
     border: none;
-    padding-top: 230vh;
+    padding-top: 200vh;
     font-size: 3vh;
     margin: 0;
 }
@@ -89,7 +89,7 @@ body{
 }
 
 .stikyLateral{
-    height: 630vh;
+    height: 298vh;
     width: 100vw;
     position: absolute;
 }
