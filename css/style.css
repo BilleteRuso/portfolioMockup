@@ -1,116 +1,59 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* SECCIÓN WORK */
+.workLi{
+    margin: 0px 17px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.fullPage{
+    max-width: 100vw;
+    background-color: #fff;
+    position: absolute;
+}
+
+.pro,
+.perso {
+    max-width: 100vw;
+    height: 500vh;
+    margin-top: 0vh;
+}
+.perso {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    clip-path: circle(0px at var(--x, 0) var(--y, 0));
+    transition: clip-path 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);
+    cursor: default;
+}
+.perso.moving {
+    clip-path: circle(160px at var(--x, 0) var(--y, 0));
+    transition: clip-path 0.15s;
 }
 
 .heroWork{
-    width: 100%;
-    height: 200vh;
-    position: absolute;
-    z-index: 10;
-    text-align: left;
-    color: #fff;
-    background-color: rgb(0, 0, 0);
-    margin-bottom: 20vh;
-    cursor: default;
+    margin: 0 10vw;
+    height: 100vh;
+    width: 80vw;
 }
 
-.seccionProduct{
-    margin: 20vh 20vh 0vh 20vh;
-    padding: 2px;
-    position: absolute;
-    z-index: 111;
-    height: 155.5vh;
-    width: 79.7vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-}
-
-.box0{
-    grid-column: 1 / 3;
-    grid-row: 1;
-    background-color: transparent;
-    color: transparent;
-    transition-duration:1s;
-    transition-delay: none;
-}
-.box1{
-    grid-column: 3 / 3;
-    grid-row: 1;
-    background-color: transparent;
-    color: transparent;
-    transition-duration:1s;
-    transition-delay: none;
-}
-.box2{
-    grid-column: 1 / 3;
-    grid-row: 2;
-    background-color: transparent;
-    color: transparent;
-    transition-duration:1s;
-    transition-delay: none;
-}
-.box3{
-    grid-column: 3 / 3;
-    grid-row: 2;
-    background-color: transparent;
-    color: transparent;
-    transition-duration:1s;
-    transition-delay: none;
-}
-.box4{
-    grid-column: 1 / 3;
-    grid-row: 3;
-    background-color: transparent;
-    color: transparent;
-    transition-duration:1s;
-    transition-delay: none;
-}
-.box5{
-    grid-column: 3 / 3;
-    grid-row: 3;
-    background-color: transparent;
-    color: transparent;
-    transition-duration:1s;
-    transition-delay: none;
-}
-.box6{
-    grid-column: 1 / 3;
-    grid-row: 4;
-    background-color: transparent;
-    color: transparent;
-    transition-duration:1s;
-    transition-delay: none;
-}
-.box7{
-    grid-column: 3 / 3;
-    grid-row: 4;
-    background-color: transparent;
-    color: transparent;
-    transition-duration:1s;
-    transition-delay: none;
-}
-
-.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover{
-    background-color: #3d5367f8;
-    color: black;
-}
-
-.project{
-    font-weight: 700;
+.tituloWork{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 0vh 10vh;
-}
-
-.miWork{
-    margin-top: 18vh;
-    text-align: center;
-}
-
-h4{
-    margin: 0px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding-top: 200vh;
+    font-size: 3vh;
+    margin: 0;
 }
 
 
@@ -303,6 +246,104 @@ a{
 /* COSAS QUE SOBRAN POR AHORA */
 
 
+
+/* .seccionProduct{
+    margin: 30vh 20vh 0vh 20vh;
+    padding: 2px;
+    position: absolute;
+    z-index: 111;
+    height: 155.5vh;
+    width: 79.7vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.box0{
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: transparent;
+    color: transparent;
+    transition-duration:1s;
+    transition-delay: none;
+}
+.box1{
+    grid-column: 3 / 3;
+    grid-row: 1;
+    background-color: transparent;
+    color: transparent;
+    transition-duration:1s;
+    transition-delay: none;
+}
+.box2{
+    grid-column: 1 / 3;
+    grid-row: 2;
+    background-color: transparent;
+    color: transparent;
+    transition-duration:1s;
+    transition-delay: none;
+}
+.box3{
+    grid-column: 3 / 3;
+    grid-row: 2;
+    background-color: transparent;
+    color: transparent;
+    transition-duration:1s;
+    transition-delay: none;
+}
+.box4{
+    grid-column: 1 / 3;
+    grid-row: 3;
+    background-color: transparent;
+    color: transparent;
+    transition-duration:1s;
+    transition-delay: none;
+}
+.box5{
+    grid-column: 3 / 3;
+    grid-row: 3;
+    background-color: transparent;
+    color: transparent;
+    transition-duration:1s;
+    transition-delay: none;
+}
+.box6{
+    grid-column: 1 / 3;
+    grid-row: 4;
+    background-color: transparent;
+    color: transparent;
+    transition-duration:1s;
+    transition-delay: none;
+}
+.box7{
+    grid-column: 3 / 3;
+    grid-row: 4;
+    background-color: transparent;
+    color: transparent;
+    transition-duration:1s;
+    transition-delay: none;
+}
+
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover{
+    background-color: #3d5367f8;
+    color: black;
+}
+
+.project{
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0vh 10vh;
+}
+
+.miWork{
+    margin-top: 18vh;
+    text-align: center;
+}
+
+h4{
+    margin: 0px;
+}  */
 
 
 
