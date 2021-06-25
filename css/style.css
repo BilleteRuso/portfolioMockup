@@ -136,6 +136,10 @@ body{
     margin-bottom: 5vh;
 }
 
+hr{
+    width: 80vw;
+}
+
 .pChido{
     font-weight: 100;
     margin: 2px;
@@ -148,6 +152,17 @@ body{
     margin-bottom: 10vh;
     margin-left: 20vh;
     margin-right: 20vh;
+}
+.pChido2{
+    font-weight: 100;
+    margin: 2px;
+    font-size: 4vh;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 46vh;
 }
 
 .marca{
@@ -167,14 +182,14 @@ body{
     width: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fff;
+    background-color: black;
 }
 
 .seccionAbout{
     margin: 60vh 20vh 5vh 20vh;
     width: 80vw;
     text-align: center;
-    color: black;
+    color: #fff;
     display: flex;
     flex-direction: row;
     height: 176vh;
@@ -184,14 +199,14 @@ body{
 .margenLeft{
     width: 55vh;
     border-left: 2px;
-    border-color: black;
+    border-color: #fff;
     border-style: dashed;
     margin-top: 20vh;
 }
 
 .mainCurriculum{
     border-left: 2px;
-    border-color: black;
+    border-color: #fff;
     border-style: dashed;
     width: 150vh;
     border-left: none;
@@ -268,13 +283,6 @@ body{
     font-size: 3vh;
 }
 
-.last{
-    width: 100vw;
-    height: 200vh;
-    background-color: #C5382C;
-    margin-top: 20vh;
-}
-
 /* SECCIÓN CONTACTO */
 
 .pro,
@@ -329,6 +337,7 @@ body{
     font-size: 4vh;
     text-align: center;
 }
+
 
 .heroContact{
     width: 100%;
