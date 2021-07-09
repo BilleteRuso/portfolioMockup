@@ -233,7 +233,7 @@ body{
 }
 
 .rowAbout{
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     color: #fff;
     background-color: black;
@@ -241,7 +241,7 @@ body{
 
 .seccionAbout{
     margin: 60vh 20vh 5vh 20vh;
-    width: 80vw;
+    max-width: 80vw;
     text-align: center;
     color: #fff;
     display: flex;
@@ -404,6 +404,8 @@ a{
     color: white;
     font-weight: 500;
 }
+
+
 
 
 
