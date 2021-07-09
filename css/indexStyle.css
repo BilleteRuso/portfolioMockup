@@ -87,7 +87,7 @@ li a{
     color: #fff;
     border: none;
     margin-top: 25vh;
-    font-size: 2.5rem;
+    font-size: 3vh;
     position: relative;
     z-index: 1000000;
 }
@@ -105,23 +105,18 @@ h1{
         margin-top: 20vh;
         font-size: 1.5em;
     }
+
     .frameContainer {
         position: relative;
         padding-bottom: 56.25%; /* 16:9 */  
         padding-top: 25px;
-        width: 500%; /* enlarge beyond browser width */
-        left: -100%; /* center */
+        height: 300%; /* enlarge beyond browser width */
+        top: -100%; /* center */
         position: fixed;
-        height: 100%;
-        top: -5%;
     }
     
     .frameContainer iframe {
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        height: 100%;
-        pointer-events: none !important;
+        transform: rotate(90deg);
     }
 }
 @media (max-width: 900px) {
