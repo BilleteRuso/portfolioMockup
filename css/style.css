@@ -205,8 +205,6 @@ li a{
 .pChido{
     font-weight: 100;
     margin: 2px;
-    font-size: 4vh;
-    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8vh;
     text-align: center;
@@ -219,9 +217,6 @@ li a{
 }
 .pChido1{
     font-weight: 100;
-    margin: 2px;
-    font-size: 4vh;
-    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8vh;
     text-align: center;
@@ -372,7 +367,33 @@ li a{
 }
 @media (max-width: 910px) {
     .yoSoy{
-        font-size: 7vh;
+        font-size: 2.5rem;
+        text-align: left;
+        font-weight: 200;
+        position: sticky;
+        top: 8vh;
+    }
+    
+    .project0{
+        width: 200vw;
+        margin-left: -30vw;
+        top: 80vw;
+    }
+    .hrProject0{
+        display: none;
+    }
+    .project1{
+        max-width: 200vw;
+        margin-left: -55vw;
+        top: 50vh;
+        z-index: 1;
+    }
+    .pChido{
+        font-weight: 100;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        position: sticky;
+        margin: 20px;
     }
 
     
