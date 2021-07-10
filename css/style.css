@@ -367,6 +367,7 @@ li a{
         text-align: left;
         position: sticky;
         top: 0vh;
+        font-weight: 500;
     }
     
     .project0{
@@ -384,12 +385,49 @@ li a{
         z-index: 1;
     }
     .pChido{
-        font-weight: 100;
+        font-size: 2rem;
+        font-weight: 500;
         text-align: left;
         font-family: Arial, Helvetica, sans-serif;
         position: sticky;
         margin: 20px;
+        top: 160vh;
+
     }
+    .pChido1{
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        position: sticky;
+        margin: 20px;
+        top: 160vh;
+    }
+
+    .rowAbout{
+        height: 260vh;
+    }
+    .seccionAbout{
+        margin: 20px;
+    }
+
+    .margenLeft{
+        display: none;
+    }
+
+    .mainCurriculum{
+        border-left: 3px;
+        border-style: dashed;
+        height: 220vh;
+    }
+
+    .slogan{
+        position: absolute;
+        bottom: 20px;
+        margin-left: 20vw;
+    }
+
+
     
 
     
