@@ -5,6 +5,104 @@ body{
     overflow-x: hidden;
 }
 
+
+.backColor{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+.backColorSmall{
+    display: none;
+}
+
+.navBar{
+    width: 100%;
+    height: 5vh;
+    position: fixed;
+    z-index: 100;
+    background-color: transparent; 
+}
+
+ul{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a{
+    margin: 0px 8.5px 0px 8.5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.frameContainer {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */  
+    padding-top: 25px;
+    width: 300%; /* enlarge beyond browser width */
+    left: -100%; /* center */
+    position: fixed;
+}
+
+.frameContainer iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    pointer-events: none !important;
+}
+
+.wrapper {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+
+.hero{
+    width: 100%;
+    height: 93.2vh;
+    font-size: 15vh;
+    position: absolute;
+    z-index: 10;
+    background-color:transparent;
+    text-align: center;
+    color: #fff;
+    cursor: default; 
+}
+
+.art{
+    width: 100vw;
+    height: 930vh;
+    background-color: black;    
+}
+
+.tareas{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin-top: 25vh;
+    font-size: 3vh;
+    position: relative;
+    z-index: 1000000;
+}
+
+h1{
+    font-style: italic;
+    position: relative;
+    z-index: 1000000;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
 /* SECCIÓN WORK */
 .workLi{
     margin: 0px 17px;
@@ -404,6 +502,61 @@ a{
     color: white;
     font-weight: 500;
 }
+
+
+
+@media (max-width: 1000px) {
+    h1{
+        margin-top: 20vh;
+        font-size: 1.5em;
+    }
+
+    .frameContainer {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */  
+        padding-top: 25px;
+        height: 300%; /* enlarge beyond browser width */
+        top: -100%; /* center */
+        position: fixed;
+    }
+    
+    .frameContainer iframe {
+        transform: rotate(90deg);
+    }
+}
+@media (max-width: 900px) {
+    h1{
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 730px) {
+    body{
+        max-height: 100%;
+    }
+    h1{
+        font-size: 1em;
+    }
+    .tareas{
+        position: absolute;
+        bottom: 1vh;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
