@@ -5,7 +5,6 @@ body{
     overflow-x: hidden;
 }
 
-
 .backColor{
     background-color: black;
     height: 100vh;
@@ -47,6 +46,7 @@ li a{
     width: 300%; /* enlarge beyond browser width */
     left: -100%; /* center */
     position: fixed;
+    top: 0px;
 }
 
 .frameContainer iframe {
@@ -505,45 +505,6 @@ a{
 
 
 
-@media (max-width: 1000px) {
-    h1{
-        margin-top: 20vh;
-        font-size: 1.5em;
-    }
-
-    .frameContainer {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 */  
-        padding-top: 25px;
-        height: 300%; /* enlarge beyond browser width */
-        top: -100%; /* center */
-        position: fixed;
-    }
-    
-    .frameContainer iframe {
-        transform: rotate(90deg);
-    }
-}
-@media (max-width: 900px) {
-    h1{
-        font-size: 1.2em;
-    }
-}
-@media (max-width: 730px) {
-    body{
-        max-height: 100%;
-    }
-    h1{
-        font-size: 1em;
-    }
-    .tareas{
-        position: absolute;
-        bottom: 1vh;
-        width: 100%;
-        font-size: 1.5rem;
-    }
-
-}
 
 
 
