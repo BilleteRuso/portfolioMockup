@@ -5,7 +5,6 @@ body{
     overflow-x: hidden;
 }
 
-
 .navBar{
     width: 100%;
     height: 5vh;
@@ -357,27 +356,23 @@ li a{
     font-size: 3vh;
 }
 
-
-@media (max-width: 1240px) {
-    .yoSoy{
-        font-size: 9vh;
-    }
-
-    
-}
 @media (max-width: 910px) {
+    .stickySoy{
+        position: absolute;
+        max-width: 100vw;
+        height: 100vh;
+    }
     .yoSoy{
         font-size: 2.5rem;
         text-align: left;
-        font-weight: 200;
         position: sticky;
-        top: 8vh;
+        top: 0vh;
     }
     
     .project0{
         width: 200vw;
-        margin-left: -30vw;
-        top: 80vw;
+        margin-left: -35vw;
+        top: 82vw;
     }
     .hrProject0{
         display: none;
@@ -395,6 +390,7 @@ li a{
         position: sticky;
         margin: 20px;
     }
+    
 
     
 }
@@ -448,47 +444,6 @@ li a{
 a{
     text-decoration: none;
     color: white;
-    font-weight: 500;
-}
-
-@media (max-width: 1000px) {
-    h1{
-        margin-top: 20vh;
-        font-size: 1.5em;
-    }
-
-    .frameContainer {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 */  
-        padding-top: 25px;
-        height: 300%; /* enlarge beyond browser width */
-        top: -100%; /* center */
-        position: fixed;
-    }
-    
-    .frameContainer iframe {
-        transform: rotate(90deg);
-    }
-}
-@media (max-width: 900px) {
-    h1{
-        font-size: 1.2em;
-    }
-}
-@media (max-width: 730px) {
-    h1{
-        font-size: 1em;
-    }
-    .tareas{
-        position: absolute;
-        bottom: 5vh;
-        font-size: 1.5rem;
-        overflow-x: hidden;
-        margin-left: 12vw;
-        margin-right: 12vw;
-        margin-top: vh;
-    }
-
 }
 
 
