@@ -106,6 +106,10 @@ h1{
     display: none;
 }
 
+.frontColor{
+    display: none;
+}
+
 
 @media (max-width: 1000px) {
     .hero{

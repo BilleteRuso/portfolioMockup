@@ -361,28 +361,23 @@ li a{
     font-size: 3vh;
 }
 
-@media (max-width: 910px) {
-    .stickySoy{
-        position: absolute;
-        max-width: 100vw;
-        height: 100vh;
-    }
+@media (max-width: 1000px) {
+
     .yoSoy{
         font-size: 2.5rem;
         text-align: left;
         position: sticky;
         top: 0vh;
         font-weight: 500;
+        margin-bottom: 10px;
     }
     
-    .project0{
-        width: 200vw;
-        margin-left: -35vw;
-        top: 65vh;
+    .snake{
+        width: 90vw;
+        position: relative;
+        margin: 0vh 5vw;
     }
-    .hrProject0{
-        display: none;
-    }
+
     .pChido{
         font-size: 2rem;
         font-weight: 500;
@@ -390,14 +385,9 @@ li a{
         font-family: Arial, Helvetica, sans-serif;
         position: sticky;
         margin: 20px;
-        top: 180vh;
+        margin-top: 10px;
     }
-    .project1{
-        max-width: 200vw;
-        margin-left: -55vw;
-        top: 60vh;
-        z-index: 1;
-    }
+
     .pChido1{
         font-size: 2rem;
         font-weight: 500;
@@ -406,6 +396,18 @@ li a{
         position: sticky;
         margin: 20px;
         top: 260vh;
+    }
+
+    .nokia{
+        width: 100vw;
+    }
+
+    .stickyChido{
+        background-color: #F4BCA9;
+        width: 100vw;
+        height: 500vh;
+        position: absolute;
+        z-index: 1111111;
     }
 
     .rowAbout{
@@ -445,8 +447,6 @@ li a{
         margin-left: 20vw;
     }
 
-
-    
 
     
 }
