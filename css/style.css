@@ -374,8 +374,9 @@ li a{
     
     .snake{
         width: 90vw;
-        position: relative;
+        position: fixed;
         margin: 0vh 5vw;
+        
     }
 
     .pChido{
@@ -383,9 +384,10 @@ li a{
         font-weight: 500;
         text-align: left;
         font-family: Arial, Helvetica, sans-serif;
-        position: sticky;
+        position: relative;
         margin: 20px;
         margin-top: 10px;
+        top: 55vh;
     }
 
     .pChido1{
@@ -393,21 +395,9 @@ li a{
         font-weight: 500;
         text-align: left;
         font-family: Arial, Helvetica, sans-serif;
-        position: sticky;
+        position: relative;
         margin: 20px;
-        top: 260vh;
-    }
-
-    .nokia{
-        width: 100vw;
-    }
-
-    .stickyChido{
-        background-color: #F4BCA9;
-        width: 100vw;
-        height: 500vh;
-        position: absolute;
-        z-index: 1111111;
+        top: 110vh;
     }
 
     .rowAbout{
