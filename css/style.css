@@ -375,11 +375,12 @@ li a{
     
     .snake{
         width: 90vw;
-        position: fixed;
+        position: absolute;
         margin: 0vh 5vw;
         z-index: 0;
-        top: 50vh;
+        top: 40vh;
     }
+    
 
     .project1{
         max-width: 100vw;
