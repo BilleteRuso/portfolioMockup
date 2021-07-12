@@ -121,6 +121,14 @@ h1{
         top: -30px;
     }
 
+    .frontColor{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(205, 92, 92, 0.12);
+        position: absolute;
+        z-index: 10;
+    }
+
     .frameContainer{
     width: 100%; /* enlarge beyond browser width */
     left: 0;/* center */
