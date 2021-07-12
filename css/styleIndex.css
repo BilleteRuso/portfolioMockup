@@ -124,6 +124,11 @@ h1{
     width: 100%; /* enlarge beyond browser width */
     left: 0;/* center */
     position: fixed;
+    background-color: #FFDA00;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
     }
 
     iframe{
@@ -134,9 +139,7 @@ h1{
         display:block;
         position: absolute;
         max-height: 100vh;
-        width: 100vw;
         top: 0;
-
     }
     .tareas{
         position: relative;
@@ -144,5 +147,6 @@ h1{
         margin-left: 12vw;
         margin-right: 12vw;
         margin-top: 0vh;
+        
     }
 }
