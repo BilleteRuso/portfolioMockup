@@ -377,7 +377,7 @@ li a{
         position: fixed;
         margin: 0vh 5vw;
         z-index: 1111111111;
-        
+        top: 50vh;
     }
 
     .pChido{
@@ -402,7 +402,7 @@ li a{
     }
 
     .rowAbout{
-        height: 215vh;
+        height: 315vh;
         width: 100vw;
     }
     .seccionAbout{
@@ -434,7 +434,7 @@ li a{
 
     .slogan{
         position: absolute;
-        bottom: 20px;
+        bottom: 60vh;
         margin-left: 20vw;
     }
 
