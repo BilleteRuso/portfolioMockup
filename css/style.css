@@ -378,7 +378,14 @@ li a{
         position: absolute;
         margin: 0vh 5vw;
         z-index: 0;
-        top: 60vh;
+        top: 55vh;
+    }
+    .snake1{
+        width: 90vw;
+        position: absolute;
+        margin: 0vh 5vw;
+        z-index: -1;
+        top: 140vh;
     }
     
 
