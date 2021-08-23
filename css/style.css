@@ -539,6 +539,21 @@ button{
     body{
         overflow-x: hidden;
     }
+
+    .navBar{
+        position: fixed;
+    }
+    ul{
+        margin-top: 20vh;
+    }
+
+    .wrapper{
+        top: 100vh;
+    }
+
+    .tareas{
+        margin-top: 15vh;
+    }
     
     .frameContainer {
         position: relative;
@@ -564,12 +579,14 @@ button{
         font-size: 3rem;
         margin: 0px;
         padding: 30px;
+        padding-top: 10vh;
     }
 
     .mercosur{
         width: 80vw;
         height: 60vh;
         left: 40vw;
+        top: 10vh;
     }
 
     .kuga{
@@ -665,7 +682,7 @@ button{
     }
 
     .rowAbout{
-        height: 320vh;
+        height: 330vh;
     }
 
 
