@@ -37,6 +37,7 @@ body {
     position: fixed;
     z-index: 100;
     background-color: transparent; 
+    font-weight: 700;
 }
 
 ul{
@@ -46,6 +47,7 @@ ul{
     list-style: none;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 li a{
@@ -91,6 +93,13 @@ li a{
 }
 
 
+h1{
+    font-style: italic;
+    position: relative;
+    z-index: 1000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .tareas{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -101,13 +110,6 @@ li a{
     font-size: 3vh;
     position: relative;
     z-index: 1000000;
-}
-
-h1{
-    font-style: italic;
-    position: relative;
-    z-index: 1000000;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .frontMovile{
@@ -148,13 +150,6 @@ h1{
     transform: skew(-35deg);
 }
 
-.stickySoy{
-    position: absolute;
-    max-width: 100vw;
-    height: 100vh;
-    margin-bottom: 20vh;
-}
-
 
 .yoSoy{
     font-family: Arial, Helvetica, sans-serif;
@@ -167,6 +162,7 @@ h1{
     margin-top: 14vh;
     margin-left: 20vh;
     margin-bottom: 10vh;
+    font-weight: 500;
 }
 
 
@@ -187,30 +183,6 @@ h1{
     top: 80vh;
 }
 
-.projectos{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-}
-
-.project0{
-    width: 125vw;
-    position: relative;
-    margin-left: -15vw;
-    top: 25vw;
-    z-index: 1;
-    margin-bottom: 60vh;
-    
-}
-.hrProject0{
-    transform: translateY(-5.3vw);
-}
-.project1{
-    max-width: 100vw;
-    position: relative;
-    top: 50vh;
-    z-index: 1;
-}
 
 .blackBack{
     width: 100vw;
@@ -228,21 +200,6 @@ a{
     text-decoration: none;
 }
 
-
-.stickyChido{
-    position: absolute;
-    max-width: 100vw;
-    height: 160vh;
-    transform: translate(0, -40vh);
-    z-index: 0;
-}
-.stickyChido1{
-    position: absolute;
-    width: 100vw;
-    height: 80vh;
-    z-index: 0;
-}
-
 .pChido{
     font-weight: 100;
     margin: 2px;
@@ -253,6 +210,7 @@ a{
     margin-left: 20vh;
     margin-right: 20vh;
     position: sticky;
+    font-weight: 500;
 }
 
 .pChido1{
@@ -277,6 +235,7 @@ a{
     font-size: 4vh;
     text-align: center;
     margin-top: 46vh;
+    
 }
 .pChido2{
     color: #fff;
@@ -580,10 +539,17 @@ footer{
         position: fixed;
     }
 
+    
     ul{
         margin-top: 7vh;
     }
-
+    
+    h1{
+        font-size: 3.5rem;
+    }
+    .tareas{
+        font-size: 1rem;
+    }
 
     #addSection{
         right: -15px;
@@ -597,9 +563,6 @@ footer{
         width: 100vw;
     }
 
-    .tareas{
-        font-size: 1rem;
-    }
 
     .yoSoy{
         font-size: 2.5rem;
