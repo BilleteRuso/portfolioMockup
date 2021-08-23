@@ -37,7 +37,6 @@ body {
     position: fixed;
     z-index: 100;
     background-color: transparent; 
-    font-weight: 300;
 }
 
 ul{
@@ -47,6 +46,7 @@ ul{
     list-style: none;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 
 }
 
@@ -532,10 +532,6 @@ footer{
 
 
 @media (max-width: 700px) {
-    .hero{
-        top: -10vh;
-    }
-
     .frameContainer {
         position: relative;
         padding-bottom: 50%; /* 16:9 */  
@@ -545,26 +541,34 @@ footer{
 
     
     ul{
-        margin-top: 7vh;
+        margin-top: 5vh;
     }
     
     h1{
         font-size: 3rem;
+        padding-bottom: 10vh;
     }
     .tareas{
         font-size: 1rem;
     }
 
-    #addSection{
-        right: -15px;
-        width: 100px;
-    }
 
     .hero{
         font-size: 2rem;
-        top: 30vh;
+        top: 25vh;
         text-align: center;
         width: 100vw;
+    }
+
+    #addSection{
+        right: -15px;
+        width: 100px;
+        top: 85vh;
+    }
+
+
+    #heroAbout{
+        top: 88.5vh;
     }
 
 
