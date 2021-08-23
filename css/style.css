@@ -9,10 +9,8 @@ body{
     width: 0px;
 }
 
-
 .wrapper{
-    overflow-y: scroll;
-    scroll-behavior: smooth; 
+    width: 100vw;
 }
 
 .backColor{
@@ -20,13 +18,9 @@ body{
     height: 100vh;
     width: 100vw;
     position: absolute;
-    z-index: -1;
     top: 0px;
 }
 
-.backColorSmall{
-    display: none;
-}
 
 .navBar{
     width: 100%;
@@ -316,12 +310,10 @@ a{
 
 .seccionAbout{
     margin: 0vh 20vh 5vh 20vh;
-    max-width: 80vw;
     text-align: center;
     color: #fff;
     display: flex;
     flex-direction: row;
-    height: 176vh;
     width: 80vw;
     position: relative;
 }
@@ -432,7 +424,6 @@ a{
 
 .containerFlexContacto{
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: row;
     margin-top: 10vh;
@@ -544,8 +535,148 @@ button{
     right: 0px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
+    .frameContainer {
+        position: relative;
+        padding-bottom: 50%; /* 16:9 */  
+        height: 100vh;
+        position: fixed;
+    }
 
+    #addSection{
+        right: -40px;
+        width: 100px;
+        bottom: -10px;
+    }
+
+    .hero{
+        font-size: 2rem;
+        top: 30vh;
+        text-align: center;
+        width: 100vw;
+    }
+
+    .yoSoy{
+        font-size: 3rem;
+        margin: 0px;
+        padding: 30px;
+    }
+
+    .mercosur{
+        width: 80vw;
+        height: 50vh;
+        left: 40vw;
+    }
+
+    .kuga{
+        width: 80vw;
+        height: 50vh;
+        left: -20vw; 
+        top: 65vh;
+    }
+
+    .pChido{
+        font-size: 3rem;
+        margin: 20vh 0px;
+        padding: 30px;
+    }
+
+    .pChido2{
+        font-size: 4vh;
+    }
+
+    .seccionAbout{
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        width: 100vw;
+    }
+
+    .margenLeft{
+        display: none;
+    }
+
+    .mainCurriculum{
+        border-right: none;
+    }
+
+    .tituloMain, .otroTituloMain, .subtituloMain, .lugarMain, .descripcionMain{
+        margin-left: 30px;
+    }
+
+    .slogan{
+        padding: 20px;
+        margin-top: 10vh;
+    }
+
+    .containerFlexContacto{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .form{
+        padding: 30px;
+        width: 90vw;
+    }
+
+    .name, .email{
+        width: 40vw;
+    }
+
+    .subject{
+        width: 84.5vw;
+    }
+
+    .message{
+        width: 84.5vw;
+    }
+
+    
+    button{
+        width: 50vw;
+        margin-left: 38vw;
+    }
+
+    .location{
+        width: 40vw;
+        height: 100vh;
+        background-color: #2b2b2b8c;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 100;
+    }
+    
+    .locationImg{
+        width: 40vw;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    .locationImg{
+        position: relative;
+        width: 100vw;
+    }
+    
+    .location{
+        position: absolute;
+        width: 100vw;
+        top: 88vh;
+    }
+
+    .rowAbout{
+        height: 320vh;
+    }
+
+
+
+
+
+    
+
+    
 }
 
 
