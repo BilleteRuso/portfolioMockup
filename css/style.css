@@ -1,7 +1,16 @@
-body{
+body {
+    overflow-x: hidden;
+    overflow-y: scroll !important;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(0, 0, 0);
+}
+
+.wrapper{
+    width: 100vw;
+    overflow-x:hidden;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
 }
 
 ::-webkit-scrollbar {
@@ -9,8 +18,9 @@ body{
 }
 
 .wrapper{
-    width: 100vw;
+    overflow-x:hidden
 }
+
 
 .backColor{
     background-color: black;
@@ -52,7 +62,6 @@ li a{
     left: -100%; /* center */
     position: fixed;
     top: -50px;
-    overflow: hidden;
 }
 
 .frameContainer iframe {
@@ -116,8 +125,6 @@ h1{
 **** SECCIÓN ABOUT *******************************
 ****************************************************/
 
-
-
 #heroAbout{
     width: 100%;
     position: relative;
@@ -137,7 +144,7 @@ h1{
     z-index: 100000;
     background-color: #000000;
     right: -25px;
-    bottom: -5px;
+    top: 95vh;
     transform: skew(-35deg);
 }
 
@@ -305,7 +312,6 @@ a{
     color: #fff;
     background-color: black;
     position: relative;
-    height: 340vh;
 }
 
 .seccionAbout{
@@ -314,7 +320,7 @@ a{
     color: #fff;
     display: flex;
     flex-direction: row;
-    width: 80vw;
+    width: 100vw;
     position: relative;
 }
 
@@ -324,15 +330,17 @@ a{
     border-color: #fff;
     border-style: dashed;
     margin-top: 20vh;
+    margin-bottom: 40vh;
 }
 
 .mainCurriculum{
     border-left: 2px;
     border-color: #fff;
     border-style: dashed;
-    width: 150vh;
+    width: 100vh;
     border-left: none;
     margin-top: 20vh;
+    margin-bottom: 40vh;
 }
 
 .tituloLeft{
@@ -412,13 +420,13 @@ a{
 
 #heroContact{
     width: 100%;
-    height: 100vh;
     position: relative;
     z-index: 10;
     text-align: left;
     background-color: black;
     color: white;
     bottom: 0px;
+    top: 98.5vh
 
 }
 
@@ -426,7 +434,6 @@ a{
     width: 100vw;
     display: flex;
     flex-direction: row;
-    margin-top: 10vh;
 }
 
 .form{
@@ -535,26 +542,37 @@ button{
     right: 0px;
 }
 
+
+/*******************************************************
+**** SECCIÓN FOOTER *******************************
+****************************************************/
+
+footer{
+    background-color: #000000;
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    top: 98.5vh;
+}
+
+
+.slogan{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+    border: none;
+    padding: 50vh 0px 0px 0px;
+    margin: 0px;
+    font-size: 1.6rem;
+}
+
+
+/*******************************************************
+**** MEDIA QUERY *******************************
+****************************************************/
+
+
 @media (max-width: 700px) {
-    body{
-        overflow-x: hidden;
-    }
-
-    .navBar{
-        position: fixed;
-    }
-    ul{
-        margin-top: 20vh;
-    }
-
-    .wrapper{
-        top: 100vh;
-    }
-
-    .tareas{
-        margin-top: 15vh;
-    }
-    
     .frameContainer {
         position: relative;
         padding-bottom: 50%; /* 16:9 */  
@@ -562,10 +580,14 @@ button{
         position: fixed;
     }
 
+    ul{
+        margin-top: 7vh;
+    }
+
+
     #addSection{
-        right: -40px;
+        right: -15px;
         width: 100px;
-        bottom: -10vh;
     }
 
     .hero{
@@ -575,36 +597,51 @@ button{
         width: 100vw;
     }
 
+    .tareas{
+        font-size: 1rem;
+    }
+
     .yoSoy{
-        font-size: 3rem;
-        margin: 0px;
-        padding: 30px;
-        padding-top: 10vh;
+        font-size: 2.5rem;
+        margin: 20px 0px 50px 0px;
+        padding: 20px;
+        line-height: 1;
     }
 
     .mercosur{
         width: 80vw;
         height: 60vh;
         left: 40vw;
-        top: 10vh;
     }
 
     .kuga{
         width: 80vw;
         height: 60vh;
         left: -20vw; 
-        top: 85vh;
+        top: 60vh;
     }
 
     .pChido{
-        font-size: 3rem;
-        margin: 20vh 0px;
-        padding: 30px;
+        font-size: 2.5rem;
+        margin: 18vh 0px;
+        padding: 20px;
+        line-height: 1;
     }
 
-    .pChido2{
-        font-size: 4vh;
+    .hrBottom{
+        margin: 20px;
+        width: 90vw;
     }
+
+    .pChido2, .pChido3{
+        font-size: 1.3rem;
+    }
+
+    .marca{
+        font-size: 2.5rem;
+    }
+
+    
 
     .seccionAbout{
         margin-right: 0px;
@@ -623,31 +660,37 @@ button{
 
     .tituloMain, .otroTituloMain, .subtituloMain, .lugarMain, .descripcionMain{
         margin-left: 20px;
-        margin-right: 20px;
     }
 
     .descripcionMain{
-        font-size: 1rem;
-    }
+    text-align: left;
+    font-size: 2vh;
+    margin: 0px 20px;
+}
 
     .slogan{
         padding: 20px;
         margin-top: 10vh;
     }
 
+    /*******************************************************
+**** SECCIÓN CONTACT *******************************
+****************************************************/
+
     .containerFlexContacto{
         flex-direction: column;
         flex-wrap: wrap;
-        background-color: #000000;
     }
 
     .form{
         padding: 20px;
         width: 90vw;
+        margin-bottom: 20vh;
+        background-color: #000000;
     }
 
     .name, .email{
-        width: 38.5vw;
+        width: 38.7vw;
     }
 
     .subject{
@@ -664,25 +707,21 @@ button{
         margin-left: 38vw;
     }
 
-    .formTitle{
-        font-size: 2.5rem;
-    }
-
-
 
     .locationImg{
         position: relative;
-        width: 110vw;
+        width: 100vw;
     }
     
-    .location{
-        position: absolute;
-        width: 100vw;
-        top: 99vh;
-    }
 
-    .rowAbout{
-        height: 330vh;
+    .slogan{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #fff;
+        border: none;
+        padding: 50vh 0px 0px 0px;
+        margin: 0px;
+        font-size: 1.6rem;
     }
 
 
