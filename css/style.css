@@ -539,14 +539,13 @@ footer{
         position: fixed;
     }
 
-    
     ul{
         margin-top: 5vh;
     }
     
     h1{
         font-size: 3rem;
-        padding-bottom: 10vh;
+        padding-bottom: 20vh;
     }
     .tareas{
         font-size: 1rem;
@@ -555,7 +554,7 @@ footer{
 
     .hero{
         font-size: 2rem;
-        top: 25vh;
+        top: 30vh;
         text-align: center;
         width: 100vw;
     }
@@ -563,12 +562,12 @@ footer{
     #addSection{
         right: -15px;
         width: 100px;
-        top: 85vh;
+        top: 95vh;
     }
 
 
     #heroAbout{
-        top: 88.5vh;
+        top: 98.5vh;
     }
 
 
@@ -604,15 +603,10 @@ footer{
         width: 90vw;
     }
 
-    .pChido2, .pChido3{
+    .pChido2, .pChido3, .marca{
         font-size: 1.3rem;
     }
 
-    .marca{
-        font-size: 2.5rem;
-    }
-
-    
 
     .seccionAbout{
         margin-right: 0px;
