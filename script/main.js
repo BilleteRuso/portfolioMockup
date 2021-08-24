@@ -33,40 +33,38 @@ function send(){
     let email = document.getElementById("email").value
     let subject = document.getElementById("subject").value
     let message = document.getElementById("message").value
-    console.log(name, email, subject, message)
 
-    if(name, email, subject, message){
-    let popUp = document.getElementById("popUp")
-    let sendMessage = document.createElement("div")
-    let sendP = document.createElement("div")
-    sendMessage.setAttribute("id", "sendMessage")
-
-    let sendText = document.createElement("p")
-    sendText.setAttribute("class", "sendText")
-    sendText.textContent = `¡Hi ${name}!`
-
-    let sendText1 = document.createElement("p")
-    sendText1.setAttribute("class", "sendText")
-    sendText1.textContent = `Your message has been succesfully send.`
-
-    let sendText2 = document.createElement("p")
-    sendText2.setAttribute("class", "sendText")
-    sendText2.textContent = `Tanks for geting in touch.`
-
-    let sendText3 = document.createElement("p")
-    sendText3.setAttribute("class", "sendText")
-    sendText3.textContent = `I will get back to you in a bit.`
-
-    let cancel = document.createElement("p")
-    cancel.setAttribute("id", "cancel")
-    cancel.textContent = `X`
-
-    sendP.appendChild(sendText)
-    sendP.appendChild(sendText1)
-    sendP.appendChild(sendText2)
-    sendP.appendChild(sendText3)
-    sendMessage.appendChild(sendP)
-    popUp.appendChild(sendMessage)
+    if (name, email, subject, message){
+        let popUp = document.getElementById("popUp")
+        let sendMessage = document.createElement("div")
+        let sendP = document.createElement("div")
+        sendMessage.setAttribute("id", "sendMessage")
+    
+        let sendText = document.createElement("p")
+        sendText.setAttribute("class", "sendText")
+        sendText.textContent = `¡Hi ${name}!`
+    
+        let sendText1 = document.createElement("p")
+        sendText1.setAttribute("class", "sendText")
+        sendText1.textContent = `Your message has been successfully sent.`
+    
+        let sendText2 = document.createElement("p")
+        sendText2.setAttribute("class", "sendText")
+        sendText2.textContent = `Tanks for getting in touch, I will be sure to follow-up soon.`
+    
+        sendP.appendChild(sendText)
+        sendP.appendChild(sendText1)
+        sendP.appendChild(sendText2)
+        sendMessage.appendChild(sendP)
+        popUp.appendChild(sendMessage)
+    } else if (name == ""){
+        alert("Nombre necesario")
+    } else if (email == ""){
+        alert("Email necesario")
+    } else if (subject == ""){
+        alert("Asunto necesario")
+    } else if (message == ""){
+        alert("Mensaje necesario")
     }
 }
 

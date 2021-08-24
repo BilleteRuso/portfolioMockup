@@ -483,14 +483,13 @@ button {
 #sendMessage{
     background-color: #ffc928;
     position: absolute;
-    width: 70vw;
-    height: 72vh;
+    width: 30vw;
+    height: 22vh;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    padding: 10vw;
-    transform: translateY(-25px);
-
+    padding: 10vw 5vw;
+    transform: translateY(-1vh);
     animation-name: example;
     animation-duration: .5s;
 }
@@ -505,19 +504,6 @@ button {
     font-size: 3vh;
     margin: 5px;
 }
-
-#cancelX{
-    position: absolute;
-    z-index: 10000000;
-    right: 10vw;
-}
-
-#cancel{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3vh;
-    margin: 5px;
-}
-
 
 
 .message::placeholder{
@@ -580,6 +566,7 @@ footer{
     width: 30px;
     cursor: pointer;
 }
+
 
 /*******************************************************
 **** MEDIA QUERY *******************************
@@ -715,13 +702,18 @@ footer{
         width: 40vw;    
     }
 
+    #sendMessage{
+        width: 80vw;
+        height: 72vh;
+    }
+
     .locationImg{
         position: relative;
         width: 100vw;
     }
 
     .slogan{
-        padding: 45vh 0px 40vh 0px;
+        padding: 45vh 0px 38vh 0px;
     }
     
     .enlacesContainer{
