@@ -95,12 +95,13 @@
                 <div class="form">
                     <h2 class="formTitle">Contact me</h2>
                     <p class="formP">I'm a noamd developer with a strong Argentine accent working all over the world. I like to support my clients at all stages of their projects, don't hesitate to contact me!</p>
+                    <div id="popUp"></div>
                     <div class="gridConacto">
-                        <input class="name" type="text" placeholder="Name">
-                        <input class="email" type="email" placeholder="Email">
-                        <input class="subject" type="text" placeholder="Subject">
-                        <textarea name="message" class="message" placeholder="Message"></textarea>
-                        <button>Send message!</button>
+                        <input id="name" type="text" placeholder="Name" required>
+                        <input id="email" type="email" placeholder="Email" required>
+                        <input id="subject" type="text" placeholder="Subject" required>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        <button id="send" onclick="send()">Send message!</button>
                     </div>
                 </div>
                 <img class="locationImg" src="multimedia/location1.png" alt="">
@@ -114,6 +115,6 @@
             </div>
         </footer>
     </div>
-    <script src="js/main.js"></script>
+    <script src="script/main.js"></script>
 </body>
 </html>
