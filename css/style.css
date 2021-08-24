@@ -484,11 +484,12 @@ button {
     background-color: #ffc928;
     position: absolute;
     width: 70vw;
-    height: 52vh;
+    height: 72vh;
     border-radius: 10px;
     display: flex;
     align-items: center;
     padding: 10vw;
+    transform: translateY(-25px);
 
     animation-name: example;
     animation-duration: .5s;
@@ -504,6 +505,20 @@ button {
     font-size: 3vh;
     margin: 5px;
 }
+
+#cancelX{
+    position: absolute;
+    z-index: 10000000;
+    right: 10vw;
+}
+
+#cancel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    margin: 5px;
+}
+
+
 
 .message::placeholder{
     font-family: Arial, Helvetica, sans-serif;

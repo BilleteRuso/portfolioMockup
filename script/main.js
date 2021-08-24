@@ -57,6 +57,10 @@ function send(){
     sendText3.setAttribute("class", "sendText")
     sendText3.textContent = `I will get back to you in a bit.`
 
+    let cancel = document.createElement("p")
+    cancel.setAttribute("id", "cancel")
+    cancel.textContent = `X`
+
     sendP.appendChild(sendText)
     sendP.appendChild(sendText1)
     sendP.appendChild(sendText2)
@@ -65,3 +69,4 @@ function send(){
     popUp.appendChild(sendMessage)
     }
 }
+
