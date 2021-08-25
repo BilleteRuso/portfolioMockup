@@ -5,6 +5,12 @@ body {
     padding: 0px;
 }
 
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
 .wrapper{
     width: 100vw;
     overflow-x:hidden;
@@ -13,11 +19,6 @@ body {
     padding: 0px;
 }
 
-
-
-.wrapper{
-    overflow-x:hidden
-}
 
 
 .backColor{
@@ -479,7 +480,7 @@ button {
     background-color: #ffc928;
     position: absolute;
     width: 32vw;  
-    height: 30vh;
+    height: 24vh;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -621,13 +622,13 @@ footer{
     }
 
     .mercosur{
-        width: 80vw;
+        width: 75vw;
         height: 60vh;
         left: 40vw;
     }
 
     .kuga{
-        width: 80vw;
+        width: 75vw;
         height: 60vh;
         left: -20vw; 
         top: 60vh;
@@ -705,7 +706,7 @@ footer{
 
     #sendMessage{
         width: 80vw;
-        height: 55vh;
+        height: 65vh;
     }
 
     #cancel{
@@ -723,9 +724,6 @@ footer{
     
     .enlacesContainer{
         width: 20vw;
-        fill: #ffc928;
-        fill: #ffc928;
-        fill: #ffc928;
     }
     
     .enlaces{
