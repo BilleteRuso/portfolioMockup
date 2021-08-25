@@ -13,9 +13,7 @@ body {
     padding: 0px;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-}
+
 
 .wrapper{
     overflow-x:hidden
@@ -239,17 +237,10 @@ a{
 }
 .pChido2{
     color: #fff;
-    cursor: pointer;
     display: block;
     text-align: center;
 }
 
-.pChido2:hover{
-    color: #FFCB28;
-    cursor: pointer;
-    transition: 0.2s;
-    text-shadow: rgba(246, 73, 167, 0.9) 0px 2px 7px;
-}
 
 .marca{
     font-style: italic;
@@ -294,8 +285,8 @@ a{
 
 .mainCurriculum{
     border-left: 2px;
-    border-color: #fff;
     border-style: dashed;
+    border-color: #fff;
     width: 100vh;
     border-left: none;
     margin-top: 20vh;
@@ -488,9 +479,11 @@ button {
     background-color: #ffc928;
     position: absolute;
     width: 32vw;  
+    height: 30vh;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    transform: translateY(-1vh);
     padding: 10vw 5vw;
     animation-name: example;
     animation-duration: .5s;
@@ -712,7 +705,11 @@ footer{
 
     #sendMessage{
         width: 80vw;
-        height: 72vh;
+        height: 55vh;
+    }
+
+    #cancel{
+        transform: translateY(-15vh);
     }
 
     .locationImg{
@@ -721,11 +718,14 @@ footer{
     }
 
     .slogan{
-        padding: 45vh 0px 38vh 0px;
+        padding: 38vh 0px 35vh 0px;
     }
     
     .enlacesContainer{
         width: 20vw;
+        fill: #ffc928;
+        fill: #ffc928;
+        fill: #ffc928;
     }
     
     .enlaces{
