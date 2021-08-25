@@ -35,10 +35,10 @@ function send(){
     let message = document.getElementById("message").value
 
     if (name, email, subject, message){
-        let popUp = document.getElementById("popUp")
+        let gridConacto = document.getElementById("gridConacto")
         let sendMessage = document.createElement("div")
-        let sendP = document.createElement("div")
         sendMessage.setAttribute("id", "sendMessage")
+        let sendP = document.createElement("div")
 
         let cancel = document.createElement("p")
         cancel.setAttribute("class", "sendText")
@@ -56,14 +56,14 @@ function send(){
     
         let sendText2 = document.createElement("p")
         sendText2.setAttribute("class", "sendText")
-        sendText2.textContent = `Tanks for getting in touch, I will be sure to follow-up soon.`
+        sendText2.textContent = `Thanks for getting in touch, I will be sure to follow-up soon.`
     
         sendP.appendChild(cancel)
         sendP.appendChild(sendText)
         sendP.appendChild(sendText1)
         sendP.appendChild(sendText2)
         sendMessage.appendChild(sendP)
-        popUp.appendChild(sendMessage)
+        gridConacto.appendChild(sendMessage)
 
         document.getElementById("send").removeAttribute("onclick");
     
@@ -80,6 +80,6 @@ function send(){
 
 function cancel(){
     document.getElementById("send").setAttribute("onclick", "send()");
-    document.getElementById("popUp").removeChild(sendMessage);
+    document.getElementById("gridConacto").removeChild(sendMessage);
 }
 
