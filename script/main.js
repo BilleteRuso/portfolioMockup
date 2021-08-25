@@ -39,7 +39,13 @@ function send(){
         let sendMessage = document.createElement("div")
         let sendP = document.createElement("div")
         sendMessage.setAttribute("id", "sendMessage")
-    
+
+        let cancel = document.createElement("p")
+        cancel.setAttribute("class", "sendText")
+        cancel.setAttribute("id", "cancel")
+        cancel.setAttribute("onclick", "cancel()")
+        cancel.textContent = `X`
+
         let sendText = document.createElement("p")
         sendText.setAttribute("class", "sendText")
         sendText.textContent = `¡Hi ${name}!`
@@ -52,11 +58,15 @@ function send(){
         sendText2.setAttribute("class", "sendText")
         sendText2.textContent = `Tanks for getting in touch, I will be sure to follow-up soon.`
     
+        sendP.appendChild(cancel)
         sendP.appendChild(sendText)
         sendP.appendChild(sendText1)
         sendP.appendChild(sendText2)
         sendMessage.appendChild(sendP)
         popUp.appendChild(sendMessage)
+
+        document.getElementById("send").removeAttribute("onclick");
+    
     } else if (name == ""){
         alert("Nombre necesario")
     } else if (email == ""){
@@ -66,5 +76,10 @@ function send(){
     } else if (message == ""){
         alert("Mensaje necesario")
     }
+}
+
+function cancel(){
+    document.getElementById("send").setAttribute("onclick", "send()");
+    document.getElementById("popUp").removeChild(sendMessage);
 }
 
