@@ -27,14 +27,15 @@ function onPlayerReady(event) {
  *********** FORMULARIO ************************
  **********************************************/
 
-
 function send(){
     let name = document.getElementById("name").value
     let email = document.getElementById("email").value
     let subject = document.getElementById("subject").value
     let message = document.getElementById("message").value
+    
+    const isEmpty = str => !str.trim().length;
 
-    if (name, email, subject, message){
+    if (name && email && subject && message){
         let gridConacto = document.getElementById("gridConacto")
         let sendMessage = document.createElement("div")
         sendMessage.setAttribute("id", "sendMessage")
@@ -66,15 +67,77 @@ function send(){
         gridConacto.appendChild(sendMessage)
 
         document.getElementById("send").removeAttribute("onclick");
-    
-    } else if (name == ""){
-        alert("Nombre necesario")
-    } else if (email == ""){
-        alert("Email necesario")
-    } else if (subject == ""){
-        alert("Asunto necesario")
-    } else if (message == ""){
-        alert("Mensaje necesario")
+
+    } else if (isEmpty(name)){
+        let gridConacto = document.getElementById("gridConacto")
+        let sendMessage = document.createElement("div")
+        sendMessage.setAttribute("id", "nameNeed")
+        let sendP = document.createElement("div")
+
+        let sendText = document.createElement("p")
+        sendText.setAttribute("class", "alert")
+        sendText.textContent = `Name needed`
+
+        sendP.appendChild(sendText)
+        sendMessage.appendChild(sendP)
+        gridConacto.appendChild(sendMessage)
+
+        document.body.onmousedown = function() { 
+            document.getElementById("gridConacto").removeChild(sendMessage);
+        }
+
+    } else if (isEmpty(email)){
+        let gridConacto = document.getElementById("gridConacto")
+        let sendMessage = document.createElement("div")
+        sendMessage.setAttribute("id", "emailNeed")
+        let sendP = document.createElement("div")
+
+        let sendText = document.createElement("p")
+        sendText.setAttribute("class", "alert")
+        sendText.textContent = `Email needed`
+
+        sendP.appendChild(sendText)
+        sendMessage.appendChild(sendP)
+        gridConacto.appendChild(sendMessage)
+
+        document.body.onmousedown = function() { 
+            document.getElementById("gridConacto").removeChild(sendMessage);
+        }
+    } else if (isEmpty(subject)){
+        let gridConacto = document.getElementById("gridConacto")
+        let sendMessage = document.createElement("div")
+        sendMessage.setAttribute("id", "subjetNeed")
+
+        let sendP = document.createElement("div")
+
+        let sendText = document.createElement("p")
+        sendText.setAttribute("class", "alert")
+        sendText.textContent = `Subjet needed to contact back`
+
+        sendP.appendChild(sendText)
+        sendMessage.appendChild(sendP)
+        gridConacto.appendChild(sendMessage)
+
+        document.body.onmousedown = function() { 
+            document.getElementById("gridConacto").removeChild(sendMessage);
+        }
+    } else if (message == "" || name == null){
+        let gridConacto = document.getElementById("gridConacto")
+        let sendMessage = document.createElement("div")
+        sendMessage.setAttribute("id", "messageNeed")
+        let sendP = document.createElement("div")
+
+        let sendText = document.createElement("p")
+        sendText.setAttribute("class", "alert")
+        sendText.textContent = `Message needed to contact back`
+
+        sendP.appendChild(sendText)
+        sendMessage.appendChild(sendP)
+        gridConacto.appendChild(sendMessage)
+
+        document.body.onmousedown = function() { 
+            document.getElementById("gridConacto").removeChild(sendMessage);
+    } 
     }
 }
 
