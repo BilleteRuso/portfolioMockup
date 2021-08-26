@@ -32,7 +32,7 @@ function send(){
     let email = document.getElementById("email").value
     let subject = document.getElementById("subject").value
     let message = document.getElementById("message").value
-    
+
     const isEmpty = str => !str.trim().length;
 
     if (name && email && subject && message){
@@ -85,6 +85,7 @@ function send(){
         sendMessage.appendChild(sendP)
         gridConacto.appendChild(fondo)
         gridConacto.appendChild(sendMessage)
+
 
         document.body.onmousedown = function() { 
             document.getElementById("gridConacto").removeChild(sendMessage);
