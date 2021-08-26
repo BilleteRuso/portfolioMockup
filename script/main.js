@@ -72,6 +72,9 @@ function send(){
         let gridConacto = document.getElementById("gridConacto")
         let sendMessage = document.createElement("div")
         sendMessage.setAttribute("id", "nameNeed")
+        let fondo = document.createElement("div")
+        fondo.setAttribute("id", "nameNeedFondo")
+
         let sendP = document.createElement("div")
 
         let sendText = document.createElement("p")
@@ -80,16 +83,21 @@ function send(){
 
         sendP.appendChild(sendText)
         sendMessage.appendChild(sendP)
+        gridConacto.appendChild(fondo)
         gridConacto.appendChild(sendMessage)
 
         document.body.onmousedown = function() { 
             document.getElementById("gridConacto").removeChild(sendMessage);
+            document.getElementById("gridConacto").removeChild(fondo);
         }
 
     } else if (isEmpty(email)){
         let gridConacto = document.getElementById("gridConacto")
         let sendMessage = document.createElement("div")
         sendMessage.setAttribute("id", "emailNeed")
+        let fondo = document.createElement("div")
+        fondo.setAttribute("id", "emailNeedFondo")
+
         let sendP = document.createElement("div")
 
         let sendText = document.createElement("p")
@@ -98,15 +106,19 @@ function send(){
 
         sendP.appendChild(sendText)
         sendMessage.appendChild(sendP)
+        gridConacto.appendChild(fondo)
         gridConacto.appendChild(sendMessage)
 
         document.body.onmousedown = function() { 
             document.getElementById("gridConacto").removeChild(sendMessage);
+            document.getElementById("gridConacto").removeChild(fondo);
         }
     } else if (isEmpty(subject)){
         let gridConacto = document.getElementById("gridConacto")
         let sendMessage = document.createElement("div")
         sendMessage.setAttribute("id", "subjetNeed")
+        let fondo = document.createElement("div")
+        fondo.setAttribute("id", "subjectNeedFondo")
 
         let sendP = document.createElement("div")
 
@@ -116,15 +128,20 @@ function send(){
 
         sendP.appendChild(sendText)
         sendMessage.appendChild(sendP)
+        gridConacto.appendChild(fondo)
         gridConacto.appendChild(sendMessage)
 
         document.body.onmousedown = function() { 
             document.getElementById("gridConacto").removeChild(sendMessage);
+            document.getElementById("gridConacto").removeChild(fondo);
         }
     } else if (message == "" || name == null){
         let gridConacto = document.getElementById("gridConacto")
         let sendMessage = document.createElement("div")
         sendMessage.setAttribute("id", "messageNeed")
+        let fondo = document.createElement("div")
+        fondo.setAttribute("id", "messageNeedFondo")
+
         let sendP = document.createElement("div")
 
         let sendText = document.createElement("p")
@@ -133,10 +150,12 @@ function send(){
 
         sendP.appendChild(sendText)
         sendMessage.appendChild(sendP)
+        gridConacto.appendChild(fondo)
         gridConacto.appendChild(sendMessage)
 
         document.body.onmousedown = function() { 
             document.getElementById("gridConacto").removeChild(sendMessage);
+            document.getElementById("gridConacto").removeChild(fondo);
     } 
     }
 }
