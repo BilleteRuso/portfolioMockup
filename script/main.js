@@ -27,6 +27,7 @@ function onPlayerReady(event) {
  *********** FORMULARIO ************************
  **********************************************/
 
+
 function send(){
     let name = document.getElementById("name").value
     let email = document.getElementById("email").value
@@ -79,7 +80,7 @@ function send(){
 
         let sendText = document.createElement("p")
         sendText.setAttribute("class", "alert")
-        sendText.textContent = `Name needed`
+        sendText.textContent = `Name required`
 
         sendP.appendChild(sendText)
         sendMessage.appendChild(sendP)
@@ -103,7 +104,7 @@ function send(){
 
         let sendText = document.createElement("p")
         sendText.setAttribute("class", "alert")
-        sendText.textContent = `Email needed`
+        sendText.textContent = `Email required`
 
         sendP.appendChild(sendText)
         sendMessage.appendChild(sendP)
@@ -125,7 +126,7 @@ function send(){
 
         let sendText = document.createElement("p")
         sendText.setAttribute("class", "alert")
-        sendText.textContent = `Subjet needed to contact back`
+        sendText.textContent = `Subjet required to contact back`
 
         sendP.appendChild(sendText)
         sendMessage.appendChild(sendP)
@@ -147,7 +148,7 @@ function send(){
 
         let sendText = document.createElement("p")
         sendText.setAttribute("class", "alert")
-        sendText.textContent = `Message needed to contact back`
+        sendText.textContent = `Message required to contact back`
 
         sendP.appendChild(sendText)
         sendMessage.appendChild(sendP)
