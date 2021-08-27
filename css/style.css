@@ -656,6 +656,169 @@ footer{
     cursor: pointer;
 }
 
+
+/******************************************
+************* TECNOLOGISA *******************
+*****************************************/
+
+.tec{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    position: fixed;
+    z-index: 10000000000000;
+}
+
+.tecLogo{
+    max-width: 30vh;
+}
+
+#tecGrid{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 140px 210px 30px 250px 30px;
+    width: 70vw; 
+    height: 100vh;
+    position: fixed;
+    z-index: 10000000000000000000;
+    padding: 0vh 15vw;
+    background-color: #ffffff;
+    display: none;
+    animation-name: tecIn;
+    animation-duration: 1s;
+    cursor: none;  
+    align-items: center; 
+    justify-items: center;
+}
+#tecTitulo{
+    grid-column: 1 / 5;
+    grid-row: 1;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+    animation-name: logo;
+    animation-duration: 0.7s;
+    cursor: none;
+}
+#tecHTML, #tecCSS, #tecJS, #tecREACT, #tecANGULAR, #tecMONGODB, #tecGITHUB, #tecMYSQL{
+    animation-name: logo;
+    animation-duration: 0.7s;
+    cursor: none;
+    position: relative;
+    bottom: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tecHTML{
+    grid-column: 1 / 2;
+    grid-row: 3;
+    
+}
+#tecCSS{
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+#tecJS{
+    grid-column: 3 / 4;
+    grid-row: 3;
+}
+#tecREACT{
+    grid-column: 4 / 5;
+    grid-row: 3;
+}
+#html{
+    grid-column: 1 / 2;
+    grid-row: 2;
+    animation-name: logo;
+    animation-duration: 0.7s;
+    cursor: none;
+}
+#css{
+    grid-column: 2 / 3;
+    grid-row: 2;
+    animation-name: logo;
+    animation-duration: 0.7s;
+    cursor: none; 
+}
+#js{
+    grid-column: 3 / 4;
+    grid-row: 2;
+    animation-name: logo;
+    animation-duration: 0.7s;
+    cursor: none;
+    transform: scale(.83);
+}
+#rjs{
+    grid-column: 4 / 5;
+    grid-row: 2;
+    animation-name: logo;
+    animation-duration: 0.7s;
+    cursor: none;
+}
+#tecANGULAR{
+    grid-column: 1 / 2;
+    grid-row: 5;
+}
+#tecMONGODB{
+    grid-column: 2 / 3;
+    grid-row: 5;
+}
+#tecMYSQL{
+    grid-column: 3 / 4;
+    grid-row: 5;
+}
+#tecGITHUB{
+    grid-column: 4 / 5;
+    grid-row: 5;
+}
+#ang{
+    grid-column: 1 / 2;
+    grid-row: 4;
+    animation-name: logo;
+    animation-duration: 0.7s;
+    cursor: none;
+}
+#mdb{
+    grid-column: 2 / 3;
+    grid-row: 4;
+    animation-name: logo;
+    animation-duration: 0.7s;
+    cursor: none;
+}
+#sql{
+    grid-column: 3 / 4;
+    grid-row: 4;
+    animation-name: logo;
+    animation-duration: 0.7s;
+    cursor: none;
+}
+#gh{
+    grid-column: 4 / 5;
+    grid-row: 4;
+    filter: brightness(0);
+    animation-name: logo;
+    animation-duration: 0.7s;
+    cursor: none;
+    transform: scale(.8);
+}
+@keyframes tecIn {
+    0%   {background-color: rgba(255, 255, 255, 0);}
+    100%   {background-color: #fff;}
+}
+@keyframes tecOut {
+    0%   {background-color: rgb(255, 255, 255);}
+    100%   {background-color: rgba(255, 255, 255, 0);}
+}
+@keyframes logo {
+    0%   {opacity: 0.0; color: #00000000;}
+    100%   {opacity: 1; color: #000000;}
+}
+
+
 /*******************************************************
 **** MEDIA QUERY *******************************
 ****************************************************/
@@ -811,48 +974,33 @@ footer{
     margin: 5px;
     transform: translateY(-24px);
     }
-}
 
-.tec{
-    width: 100vw;
-    height: 100vh;
-    background-color: #000000;
-    position: fixed;
-    z-index: 10000000000000;
-}
+    /******************************************
+************* TECNOLOGIA *******************
+*****************************************/
+
+
 
 .tecLogo{
     max-width: 30vh;
 }
 
 #tecGrid{
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 140px 210px 30px 250px 30px;
-    width: 70vw; 
+    grid-template-columns: repeat(2, 35vw);
+    grid-template-rows: 40px 100px 20px 100px 20px 100px 20px 100px 20px;
+    width: 100vw; 
     height: 100vh;
-    position: fixed;
-    z-index: 10000000000000000000;
-    padding: 0vh 15vw;
-    background-color: #ffffff;
-    display: none;
-    animation-name: tecIn;
-    animation-duration: 1s;
-    cursor: none;  
-    align-items: center; 
-
+    padding: 5vh 15vw;
+    justify-items: center;
 }
 #tecTitulo{
-    grid-column: 1 / 5;
+    grid-column: 1 / 3;
     grid-row: 1;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 5vh;
-    margin-bottom: 10px;
+    font-size: 3vh;
+    margin-bottom: 40px;
     padding-bottom: 0px;
-    text-align: center;
-    animation-name: logo;
-    animation-duration: 0.7s;
-    cursor: none;
 }
 #tecHTML, #tecCSS, #tecJS, #tecREACT, #tecANGULAR, #tecMONGODB, #tecGITHUB, #tecMYSQL{
     animation-name: logo;
@@ -864,106 +1012,80 @@ footer{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+#html{
+    grid-column: 1;
+    grid-row: 2;
+    transform: scale(.5);
+    justify-content: center;
+}
+#css{
+    grid-column: 2;
+    grid-row: 2;
+    transform: scale(.5);
+}
 #tecHTML{
-    grid-column: 1 / 2;
+    grid-column: 1;
     grid-row: 3;
     
 }
 #tecCSS{
-    grid-column: 2 / 3;
+    grid-column: 2;
     grid-row: 3;
-}
-#tecJS{
-    grid-column: 3 / 4;
-    grid-row: 3;
-}
-#tecREACT{
-    grid-column: 4 / 5;
-    grid-row: 3;
-}
-#html{
-    grid-column: 1 / 2;
-    grid-row: 2;
-    animation-name: logo;
-    animation-duration: 0.7s;
-    cursor: none;
-    margin-left: 20px;
-}
-#css{
-    grid-column: 2 / 3;
-    grid-row: 2;
-    animation-name: logo;
-    animation-duration: 0.7s;
-    cursor: none;
-    margin-left: 20px; 
 }
 #js{
-    grid-column: 3 / 4;
-    grid-row: 2;
-    animation-name: logo;
-    animation-duration: 0.7s;
-    cursor: none;
-    margin-left: 20px;
-    transform: scale(.83);
+    grid-column: 1;
+    grid-row: 4;
+    transform: scale(.45);
 }
 #rjs{
-    grid-column: 4 / 5;
-    grid-row: 2;
-    animation-name: logo;
-    animation-duration: 0.7s;
-    cursor: none;
-    margin-left: 20px;
+    grid-column: 2;
+    grid-row: 4;
+    transform: scale(.5);
 }
-#tecANGULAR{
-    grid-column: 1 / 2;
+#tecJS{
+    grid-column: 1;
     grid-row: 5;
 }
-#tecMONGODB{
-    grid-column: 2 / 3;
-    grid-row: 5;
-}
-#tecMYSQL{
-    grid-column: 3 / 4;
-    grid-row: 5;
-}
-#tecGITHUB{
-    grid-column: 4 / 5;
+#tecREACT{
+    grid-column: 2;
     grid-row: 5;
 }
 #ang{
-    grid-column: 1 / 2;
-    grid-row: 4;
-    animation-name: logo;
-    animation-duration: 0.7s;
-    cursor: none;
-    margin-left: 20px;
+    grid-column: 1;
+    grid-row: 6;
+    transform: scale(.5);
 }
 #mdb{
-    grid-column: 2 / 3;
-    grid-row: 4;
-    animation-name: logo;
-    animation-duration: 0.7s;
-    cursor: none;
-    margin-left: 20px;
+    grid-column: 2;
+    grid-row: 6;
+    transform: scale(.5);
+}
+#tecANGULAR{
+    grid-column: 1;
+    grid-row: 7;
+}
+#tecMONGODB{
+    grid-column: 2;
+    grid-row: 7;
 }
 #sql{
-    grid-column: 3 / 4;
-    grid-row: 4;
-    animation-name: logo;
-    animation-duration: 0.7s;
-    cursor: none;
-    margin-left: 25px;
+    grid-column: 1;
+    grid-row: 8;
+    transform: scale(.5);
 }
 #gh{
-    grid-column: 4 / 5;
-    grid-row: 4;
+    grid-column: 2;
+    grid-row: 8;
     filter: brightness(0);
-    animation-name: logo;
-    animation-duration: 0.7s;
-    cursor: none;
-    margin-left: 20px;
-    transform: scale(.8);
+    transform: scale(.4);
+}
+#tecMYSQL{
+    grid-column: 1;
+    grid-row: 9;
+}
+#tecGITHUB{
+    grid-column: 2;
+    grid-row: 9;
 }
 @keyframes tecIn {
     0%   {background-color: rgba(255, 255, 255, 0);}
@@ -976,6 +1098,7 @@ footer{
 @keyframes logo {
     0%   {opacity: 0.0; color: #00000000;}
     100%   {opacity: 1; color: #000000;}
+}
 }
 
 
