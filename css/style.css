@@ -1035,7 +1035,7 @@ footer{
         grid-template-rows: 40px 100px 20px 100px 20px 100px 20px 100px 20px;
         width: 100vw; 
         height: 100vh;
-        padding: 5vh 15vw;
+        padding: 7vh 15vw;
         justify-items: center;
     }
     #tecTitulo{
@@ -1043,9 +1043,9 @@ footer{
         grid-row: 1;
         font-weight: 700;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 3vh;
+        font-size: 2.5rem;
         margin: 20px 0px;
-        padding-bottom: 0px;
+        padding-bottom: 20px;
     }
     #tecHTML, #tecCSS, #tecJS, #tecREACT, #tecANGULAR, #tecMONGODB, #tecGITHUB, #tecMYSQL{
         animation-name: logo;
