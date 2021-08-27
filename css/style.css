@@ -307,9 +307,8 @@ a{
 
 @keyframes blinking {
     0%   {background-color: #ffc92800;}
-    15% {background-color: #ffffff23;}
-    20%   {background-color: #ffffff23;}
-    50%   {background-color: #ffffff00;}
+    5% {background-color: #ffffff23;}
+    20%   {background-color: #ffffff00;}
     100%   {background-color: #ffc92800;}
 }
 
@@ -1038,7 +1037,7 @@ footer{
         font-weight: 700;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 3vh;
-        margin: 50px 0px;
+        margin: 20px 0px;
         padding-bottom: 0px;
     }
     #tecHTML, #tecCSS, #tecJS, #tecREACT, #tecANGULAR, #tecMONGODB, #tecGITHUB, #tecMYSQL{
