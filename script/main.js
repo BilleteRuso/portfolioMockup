@@ -169,6 +169,8 @@ function cancel(){
 
 function tec() { 
     document.getElementById("tecGrid").style.display = "grid";
+    document.getElementById("margenLeft").removeAttribute("class", "blinking")
+    document.getElementById("mainCurriculum").removeAttribute("class", "blinking")
 } 
 
 function tec1(){
