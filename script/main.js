@@ -167,3 +167,11 @@ function cancel(){
     document.getElementById("gridConacto").removeChild(sendMessage);
 }
 
+function tec() { 
+    document.getElementById("tecGrid").style.display = "grid";
+} 
+
+function tec1(){
+    document.getElementById("tecGrid").style.display = "none";
+}
+

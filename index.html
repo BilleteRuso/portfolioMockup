@@ -9,110 +9,129 @@
     <title>Billete Ruso</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="frontColor"></div>
-        <div class="backColor"></div>
-            <div class="navBar">
-                <ul>
-                    <li><a href="#hero">HOME</a></li>
-                    <li><a href="#heroAbout">ABOUT</a></li>
-                    <li><a href="#heroContact">CONTACT</a></li>
-                </ul>
+    <div id="wrapper" onmousedown="tec()">
+            <div id="tecGrid" onmouseup="tec1()">
+                <h4 id="tecTitulo">TECHNOLOGY</h4>
+                <img class="tecLogo" id="html" src="multimedia/tec/html.png" alt="">
+                <h5 id="tecHTML">HTML</h5>
+                <h5 id="tecCSS">CSS</h5>
+                <img class="tecLogo" id="css" src="multimedia/tec/4672509.png" alt="">
+                <h5 id="tecJS">JS</h5>
+                <img class="tecLogo" id="js" src="multimedia/tec/js.png" alt="">
+                <h5 id="tecREACT">REACT.JS</h5>
+                <img class="tecLogo" id="rjs" src="multimedia/tec/react.png" alt="">
+                <h5 id="tecANGULAR">ANGULAR</h5>
+                <img class="tecLogo" id="ang" src="multimedia/tec/angular.png" alt="">
+                <h5 id="tecMONGODB">MONGODB</h5>
+                <img class="tecLogo" id="mdb" src="multimedia/tec/dbs_mongodb.png" alt="">
+                <h5 id="tecGITHUB">GITHUB</h5>
+                <img class="tecLogo" id="gh" src="multimedia/tec/12.png" alt="">
+                <h5 id="tecMYSQL">MYSQL</h5>
+                <img class="tecLogo" id="sql" src="multimedia/tec/MySQL.svg.png" alt="">
             </div>
-        <section id="hero">
-        <div class="hero">
-            <h1>Billete Ruso</h1>
-            <h2 class="tareas">Full-stack development<h2>
-            <!-- 1. The <iframe> (video player) will replace this <div> tag. -->
-            <div class="frameContainer">
-                <div id="player"></div>
-            </div>
-        </div>
-        </section>
-        <div id="addSection"></div>
-        <section id="heroAbout">
-            <h2 class="yoSoy">I'm a full-stack developer crafting beautiful digital experiences & products.</h2>
-            <a href="https://billeteruso.github.io/kugaEsports/" target="_blank"><img class="kuga" src="multimedia/kuga.png" alt=""></a>
-            <a href="https://billeteruso.github.io/uccMercosur/pages/introduccion.html" target="_blank"><img class="mercosur" src="multimedia/mercosur1.jpg" alt=""></a>
-            <p class="pChido">I strongly believe every brand and project is unique and should be tailor-made from industry leaders to early stage companies.</p>
-            <div class="blackBack">
-                <hr class="hrBottom">
-                <p class="pChido2">Nombre: Nicolás Demaria</p>
-                <p class="pChido3">Alias:</p>
-                <p class="marca">Billete Ruso</p>
-            </div>
-            <div class="rowAbout">
-                <div class="seccionAbout">
-                    <div class="margenLeft">
-                        <h4 class="tituloLeft">Skills</h4>
-                        <ul class="listaLeft">
-                            <li class="elementosLeft">HTML</li>
-                            <li class="elementosLeft">CSS</li>
-                            <li class="elementosLeft">JavaScript</li>
-                            <li class="elementosLeft">React.js</li>
-                            <li class="elementosLeft">Angular</li>
-                            <li class="elementosLeft">Node.js</li>
-                            <li class="elementosLeft">Mongo DB</li>
-                            <li class="elementosLeft">Firebase</li>
-                            <li class="elementosLeft">GitHub</li>
-                        </ul>
-                        <h4 class="tituloLeft">Languages</h4>
-                        <ul class="listaLeft">
-                            <li class="elementosLeft">English (Professional Working)</li>
-                            <li class="elementosLeft">Spanish (Native)</li>
-                        </ul>
+            <div id="tecnologias"></div>
+            <div class="frontColor"></div>
+            <div class="backColor"></div>
+                <div class="navBar">
+                    <ul>
+                        <li><a href="#hero">HOME</a></li>
+                        <li><a href="#heroAbout">ABOUT</a></li>
+                        <li><a href="#heroContact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <section id="hero">
+                    <div class="hero">
+                        <h1>Billete Ruso</h1>
+                        <h2 class="tareas">Full-stack development<h2>
+                            <!-- 1. The <iframe> (video player) will replace this <div> tag. -->
+                                <div class="frameContainer">
+                            <div id="player"></div>
+                        </div>
                     </div>
-                    <div class="mainCurriculum">
-                        <h3 class="tituloMain">Experience</h3>
-                        <h4 class="otroTituloMain">Eventera</h4>
-                        <h5 class="subtituloMain">Full Stack Developer</h5>
-                        <h5 class="subtituloMain">2021 - Present</h5>
-                        <h6 class="lugarMain">Remote - Freelance</h6>
-                        <p class="descripcionMain">Development and implementation of website-scraper with puppeteer. Data storage with Node.js/Express in MongoDB. Front-end development with React.js.</p>
-                        <h4 class="otroTituloMain">CoderHouse</h4>
-                        <h5 class="subtituloMain">JavaScript teacher</h5>
-                        <h5 class="subtituloMain">2021 - Present</h5>
-                        <h6 class="lugarMain">Remote</h6>
-                        <h3 class="tituloMain">Voluntary</h3>
-                        <h4 class="otroTituloMain">Kuga eSports</h4>
-                        <h5 class="subtituloMain">Frontend developer</h5>
-                        <h5 class="subtituloMain">2021 – Present</h5>
-                        <h6 class="lugarMain">Remote</h6>
-                        <p class="descripcionMain">Front-end development in React.js for esports tournament management solution.</p>               
-                        <h3 class="tituloMain">Education</h3>
-                        <h4 class="otroTituloMain">Digital House</h4>
-                        <h5 class="subtituloMain">Certified Tech Developer</h5>
-                        <h5 class="subtituloMain">2021 - Present</h5>
-                        <p class="descripcionMain">Globant and Mercado Libre scholarship for 2-year training program.</p>
-                        <br>
-                        <br>
+                </section>
+                <div id="addSection"></div>
+                <section id="heroAbout">
+                    <h2 class="yoSoy">I'm a full-stack developer crafting beautiful digital experiences & products.</h2>
+                    <a href="https://billeteruso.github.io/kugaEsports/" target="_blank"><img class="kuga" src="multimedia/kuga.png" alt=""></a>
+                    <a href="https://billeteruso.github.io/uccMercosur/pages/introduccion.html" target="_blank"><img class="mercosur" src="multimedia/mercosur1.jpg" alt=""></a>
+                    <p class="pChido">I strongly believe every brand and project is unique and should be tailor-made from industry leaders to early stage companies.</p>
+                <div class="blackBack">
+                    <hr class="hrBottom">
+                    <p class="pChido2">Nombre: Nicolás Demaria</p>
+                    <p class="pChido3">Alias:</p>
+                    <p class="marca">Billete Ruso</p>
+                </div>
+                <div class="rowAbout">
+                    <div class="seccionAbout">
+                        <div class="margenLeft">
+                            <h4 class="tituloLeft">Skills</h4>
+                            <ul class="listaLeft">
+                                <li class="elementosLeft">HTML</li>
+                                <li class="elementosLeft">CSS</li>
+                                <li class="elementosLeft">JavaScript</li>
+                                <li class="elementosLeft">React.js</li>
+                                <li class="elementosLeft">Angular</li>
+                                <li class="elementosLeft">Mongo DB</li>
+                                <li class="elementosLeft">MySQL</li>
+                                <li class="elementosLeft">GitHub</li>
+                            </ul>
+                            <h4 class="tituloLeft">Languages</h4>
+                            <ul class="listaLeft">
+                                <li class="elementosLeft">English (Professional Working)</li>
+                                <li class="elementosLeft">Spanish (Native)</li>
+                            </ul>
+                        </div>
+                        <div class="mainCurriculum">
+                            <h3 class="tituloMain">Experience</h3>
+                            <h4 class="otroTituloMain">Eventera</h4>
+                            <h5 class="subtituloMain">Full Stack Developer</h5>
+                            <h5 class="subtituloMain">2021 - Present</h5>
+                            <h6 class="lugarMain">Remote - Freelance</h6>
+                            <p class="descripcionMain">Development and implementation of website-scraper with puppeteer. Data storage with Node.js/Express in MongoDB. Front-end development with React.js.</p>
+                            <h4 class="otroTituloMain">CoderHouse</h4>
+                            <h5 class="subtituloMain">JavaScript teacher</h5>
+                            <h5 class="subtituloMain">2021 - Present</h5>
+                            <h6 class="lugarMain">Remote</h6>
+                            <h3 class="tituloMain">Voluntary</h3>
+                            <h4 class="otroTituloMain">Kuga eSports</h4>
+                            <h5 class="subtituloMain">Frontend developer</h5>
+                            <h5 class="subtituloMain">2021 – Present</h5>
+                            <h6 class="lugarMain">Remote</h6>
+                            <p class="descripcionMain">Front-end development in React.js for esports tournament management solution.</p>               
+                            <h3 class="tituloMain">Education</h3>
+                            <h4 class="otroTituloMain">Digital House</h4>
+                            <h5 class="subtituloMain">Certified Tech Developer</h5>
+                            <h5 class="subtituloMain">2021 - Present</h5>
+                            <p class="descripcionMain">Globant and Mercado Libre scholarship for 2-year training program.</p>
+                            <br>
+                            <br>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="heroContact">
-            <div class="containerFlexContacto">
-                <div class="form">
-                    <h2 class="formTitle">Contact me</h2>
-                    <p class="formP">I'm a noamd developer with a strong Argentine accent working all over the world. I like to support my clients at all stages of their projects, don't hesitate to contact me!</p>
-                    <div id="gridConacto">
-                        <div id="popUp"></div>
-                        <input id="name" type="text" placeholder="Name">
-                        <input id="email" type="email" placeholder="Email">
-                        <input id="subject" type="text" placeholder="Subject">
-                        <textarea id="message" name="message" placeholder="Message"></textarea>
-                        <button id="send" onclick="send()">Send message!</button>
+            </section>
+            <section id="heroContact">
+                <div class="containerFlexContacto">
+                    <div class="form">
+                        <h2 class="formTitle">Contact me</h2>
+                        <p class="formP">I'm a noamd developer with a strong Argentine accent working all over the world. I like to support my clients at all stages of their projects, don't hesitate to contact me!</p>
+                        <div id="gridConacto">
+                            <div id="popUp"></div>
+                            <input id="name" type="text" placeholder="Name">
+                            <input id="email" type="email" placeholder="Email">
+                            <input id="subject" type="text" placeholder="Subject">
+                            <textarea id="message" name="message" placeholder="Message"></textarea>
+                            <button id="send" onclick="send()">Send message!</button>
+                        </div>
                     </div>
+                    <img class="locationImg" src="multimedia/location1.png" alt="">
                 </div>
-                <img class="locationImg" src="multimedia/location1.png" alt="">
-            </div>
-        </section> 
-        <footer>
-            <h2 class="slogan">Pa' llamar tu atención</h2>
-            <div class="enlacesContainer">
-                <a href="https://www.linkedin.com/in/nicolasdemaria/" target="_blank"><img class="enlaces" src="multimedia/linkedin (10).png" alt=""></a>
-            </div>
-        </footer>
+            </section> 
+            <footer>
+                <h2 class="slogan">Pa' llamar tu atención</h2>
+                <div class="enlacesContainer">
+                    <a href="https://www.linkedin.com/in/nicolasdemaria/" target="_blank"><img class="enlaces" src="multimedia/linkedin (10).png" alt=""></a>
+                </div>
+            </footer>
     </div>
     <script src="script/main.js"></script>
 </body>
