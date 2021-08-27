@@ -9,7 +9,7 @@
     <title>Billete Ruso</title>
 </head>
 <body>
-    <div id="wrapper" onmousedown="tec()" ontouchstart="tec()">
+    <div id="wrapper">
             <div id="tecGrid" onmouseup="tec1()" ontouchend="tec1()">
                 <h4 id="tecTitulo">TECHNOLOGY</h4>
                 <img class="tecLogo" id="html" src="multimedia/tec/html.png" alt="">
@@ -63,7 +63,7 @@
                 </div>
                 <div class="rowAbout">
                     <div class="seccionAbout">
-                        <div class="margenLeft">
+                        <div class="margenLeft" onclick="tec()" style="cursor: pointer;">
                             <h4 class="tituloLeft">Skills</h4>
                             <ul class="listaLeft">
                                 <li class="elementosLeft">HTML</li>
@@ -81,7 +81,7 @@
                                 <li class="elementosLeft">Spanish (Native)</li>
                             </ul>
                         </div>
-                        <div class="mainCurriculum">
+                        <div class="mainCurriculum" onclick="tec()" style="cursor: pointer;">
                             <h3 class="tituloMain">Experience</h3>
                             <h4 class="otroTituloMain">Eventera</h4>
                             <h5 class="subtituloMain">Full Stack Developer</h5>

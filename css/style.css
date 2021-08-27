@@ -642,6 +642,7 @@ footer{
     padding: 45vh 0px 35vh 0px;
     margin: 0px;
     font-size: 1.6rem;
+    user-select: none;
 }
 
 .enlacesContainer{
@@ -658,7 +659,7 @@ footer{
 
 
 /******************************************
-************* TECNOLOGISA *******************
+************* TECNOLOGIA *******************
 *****************************************/
 
 .tec{
@@ -675,12 +676,12 @@ footer{
 
 #tecGrid{
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 140px 210px 30px 250px 30px;
+    grid-template-rows: 10vh 30vh 5vh 40vh 5vh;
     width: 70vw; 
     height: 100vh;
     position: fixed;
     z-index: 10000000000000000000;
-    padding: 0vh 15vw;
+    padding: 5vh 15vw;
     background-color: #ffffff;
     display: none;
     animation-name: tecIn;
@@ -695,8 +696,8 @@ footer{
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 5vh;
-    margin-bottom: 10px;
-    padding-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
     text-align: center;
     animation-name: logo;
     animation-duration: 0.7s;
