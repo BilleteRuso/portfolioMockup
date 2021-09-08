@@ -2,6 +2,7 @@
  *********** FORMULARIO ************************
  **********************************************/
 
+const isEmpty = str => !str.trim().length;
 
 function send(){
     let name = document.getElementById("name").value
@@ -9,7 +10,6 @@ function send(){
     let subject = document.getElementById("subject").value
     let message = document.getElementById("message").value
 
-    const isEmpty = str => !str.trim().length;
 
     if (name && email && subject && message){
         let gridConacto = document.getElementById("gridConacto")
@@ -64,11 +64,11 @@ function send(){
 
 
         document.body.onmousedown = function() { 
-            document.getElementById("gridConacto").removeChild(sendMessage);
+            document.getElementById("gridConacto").removeChild(nameNeed);
             document.getElementById("gridConacto").removeChild(fondo);
         }
 
-    } else if (isEmpty(email)){
+    } else if (isEmpty(email) || email.indexOf("@" && ".") == -1){
         let gridConacto = document.getElementById("gridConacto")
         let sendMessage = document.createElement("div")
         sendMessage.setAttribute("id", "emailNeed")
